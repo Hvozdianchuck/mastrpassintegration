@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Sandbox -->
+<script type="text/javascript" src="https://sandbox.masterpass.com/integration/merchant.js"></script>
+
+<!-- Production -->
+<script type="text/javascript" src="https://masterpass.com/integration/merchant.js"></script>
+<script>
+    masterpass.checkout({
+        "checkoutId": "c26966b0eae94a3fbe47f994b94394b2",
+        "allowedCardTypes": ["master,amex,diners,discover,jcb,maestro,visa"],
+        "amount": "789.53",
+        "currency": "USD",
+        "shippingLocationProfile": "US,AU,BE",
+        "suppress3Ds": false,
+        "suppressShippingAddress": false,
+        "cartId": "1efed583-1824-436a-869f-286ebdb22ae2",
+        "callbackUrl": "<merchant callback URL>"
+    });
+    function f() {
+
+        masterpass.checkout({
+            "checkoutId": "c26966b0eae94a3fbe47f994b94394b2",
+            "allowedCardTypes": ["master,amex,diners,discover,jcb,maestro,visa"],
+            "amount": "789.53",
+            "currency": "USD",
+            "shippingLocationProfile": "US,AU,BE",
+            "suppress3Ds": false,
+            "suppressShippingAddress": false,
+            "cartId": "1efed583-1824-436a-869f-286ebdb22ae2",
+            "callbackUrl": "<merchant callback URL>"
+        });
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input>
+<button value="submit" onclick="f()" > <img src="https://masterpass.com/dyn/img/btn/global/mp_chk_btn_147x034px.svg"/></button>
+
+</body>
+</html>
